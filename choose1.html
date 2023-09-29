@@ -1,0 +1,91 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background:rgba(0,0,0,0.4);
+}
+
+.container 
+{
+  padding: 25px;
+  font-size:50px;
+  font-weight:bolder;
+  font-family:lucida handwriting;
+}
+
+.modal 
+{
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  align-items: center;
+  width: 50%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 300px;
+}
+.modal-content 
+{
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 30%; 
+}
+
+
+.animate 
+{
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom 
+{
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}  
+@keyframes animatezoom 
+{
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+.hlo
+{
+    font-size:30px;
+    font-family:Segoe Script;
+    color:darkmagenta;
+    text-decoration: none;
+    padding:20px;
+    transition:transform .2s;
+}
+.hlo:hover 
+{
+   font-size:40px;
+}
+</style>
+</head>
+<body>
+<div class="modal-content animate">  
+    <div class="container">
+      GET MY MOOD<br>
+        <ul type="none">
+            <li ><a class="hlo" href="https://wynk.in/music/package/happy-tunes-tamil/bb_1559811886828">Happy </a></li>
+            <li ><a class="hlo" href="https://wynk.in/music/package/sad-tamil/bb_1439284414256">Sad </a></li>
+            <li ><a class="hlo" href="https://wynk.in/music/playlist/top-30-love-tamil/bb_1469100291205">Romantic </a></li>
+            <li ><a class="hlo" href="https://wynk.in/music/playlist/kuthu-paattu/bb_1521797076404">Kuthu </a></li>
+            <li ><a class="hlo" href="https://wynk.in/music/playlist/soup-song-tamil/amsta_jips24991613725515206">Soup songs </a></li>
+            <li ><a class="hlo" href="https://wynk.in/music/playlist/throwback-90s-tamil/bb_1520503609224">90's hits </a></li>
+            <li ><a class="hlo" href="https://wynk.in/music/package/party-tamil/bb_1496836281745">Party  </a></li>
+            <li ><a class="hlo" href="https://wynk.in/music/playlist/top-30-dance-tamil/bb_1477742083031">Dance </a></li>
+        </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

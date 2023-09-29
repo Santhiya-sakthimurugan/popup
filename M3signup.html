@@ -1,0 +1,159 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+  function validate()
+  {
+    var name=document.getElementById("uname").value;
+  var pswd=document.getElementById("psw").value;
+  if (name=="")
+  {
+    alert("Name must be entered..");
+  }
+  n=name.length
+  if (n<8)
+  {
+    alert("Your name must atleast contain 8 characters..");
+  }
+  if (pswd=="")
+  {
+    alert("Password must be entered..");
+  }
+  p=pswd.length
+  if (p<8)
+  {
+    alert("Your password must atleast contain 8 characters..");
+  }
+  }
+</script>
+<style>
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background:rgba(0,0,0,0.4);
+}
+input[type=text], input[type=password] 
+{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button 
+{
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+button:hover 
+{
+  opacity: 0.8;
+}
+.cancelbtn 
+{
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+.container 
+{
+  padding: 16px;
+}
+span.psw 
+{
+  float: right;
+  padding-top: 16px;
+}
+.modal 
+{
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  align-items: center;
+  width: 50%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 300px;
+}
+.modal-content 
+{
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 30%; 
+}
+.close 
+{
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,.close:focus 
+{
+  color: red;
+  cursor: pointer;
+}
+.animate 
+{
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+@-webkit-keyframes animatezoom 
+{
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}  
+@keyframes animatezoom 
+{
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+@media screen and (max-width: 300px) 
+{
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+.login
+{
+  width:25%;
+  background-color:darkgray;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+<form class="modal-content animate">  
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" id="uname" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" id="psw" required>
+      <button type="submit" onclick="validate()"><a href="choose.html" style="color:white;text-decoration:none;">Sign up</a></button>
+      <p>If you already have an account?&nbsp;&nbsp;<button type="button" class="login" ><a href="M3login.html" style="color:white;text-decoration:none;">login</a></button></p>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn"><a style="color:white;text-decoration:none;" href="thankyou.html">Cancel</a></button>
+      
+    </div>
+  </form>
+</div>
+</body>
+</html>
